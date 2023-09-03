@@ -7,15 +7,13 @@ import Movies from './components/movies.vue'
 
 const routes = [
     {path: '/', component: Home},
-    {path: 'about', component: About},
-    {path: 'movies', component: Movies}
-]
+    {path: '/about', component: About},
+    {path: '/movies', component: Movies}
+];
 
-const router = createRouter(
-    {
+const router = createRouter({
         history: createWebHistory(),
         routes
-    }
-)
+    });
 
 createApp(App).use(router).mount('#app')
